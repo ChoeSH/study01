@@ -30,4 +30,4 @@ public class HowOldRU {
 
 /*Scanner scan = new Scanner(System.in);
 String age = scan.nextLine();
-int num = Integer.parseint(age);*/
+int num = Integer.parseInt(age);*/
