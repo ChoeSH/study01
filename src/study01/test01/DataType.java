@@ -10,7 +10,7 @@ public class DataType {
 		double doubleNum = 1;
 		
 		char ch ='a';
-		String str ="¾È³çÇÏ¼¼¿ä";
+		String str ="ì—ì´";
 		boolean bl = true;
 		bl = false;
 	}
