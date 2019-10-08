@@ -12,7 +12,6 @@ public class FinalTest {
 		int dnum=(int)db+1;		//정해진 데이터타입을 다른 데이터 타입으로 변환 ()사용(*사용 할때마다 ()붙여줘야 한다.)
 		int snum=Integer.parseInt(s);	//String 타입의 데이터로 다른 데이터 타입으로 변환
 		
-		System.out.println(dnum);
 		String str="넘은 3이 맞습니다";
 		str = (a==3)?"맞다":"아니다";
 		System.out.println(str);
