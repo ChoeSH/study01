@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class MapTest {
-	static void changeMap(HashMap<String,String>map) {
+	static void changeMap(HashMap<String,String> map) {
 		//map = new HashMap<String,String>();	//주석된 부분이 있을경우 map이 새로운 메모리가 만들어진다.따라서 나이=44로 바뀌지 않는다.
 		map.put("나이", "44");
 	}
