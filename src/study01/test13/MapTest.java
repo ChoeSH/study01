@@ -1,6 +1,7 @@
 package study01.test13;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -15,7 +16,7 @@ public class MapTest {
 		map.put("age", "22");
 		map.put("addr", "서울");
 		mapList.add(map);
-		System.out.println(mapList);		//List는 [], map은 {} 
+		System.out.println(mapList);		//배열과 List는 [], map은 {} 
 		
 		//map.clone();		//map을 복사
 		//map.clear(); 		//map을 삭제
