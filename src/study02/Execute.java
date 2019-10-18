@@ -75,29 +75,35 @@ public class Execute {
 				}
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}		
-		
+		}
 	}
-	public static void main(String[] args) {
-		Execute ex=new Execute();
-		System.out.println("원하는 서비스 번호를 입력 :");
-		System.out.println("1. 유저 생성");
-		System.out.println("2. 유저 삭제");
-		System.out.println("3. 유저 수정");
-		System.out.println("4. 유저 조회");
-		System.out.println("q.종료");
-		String orderNum = ex.scan.nextLine();
-		if(orderNum.equals("q")) {
-			System.out.println("종료");
-		}else {
-			if(orderNum.equals("1")) {ex.insert();
-			}
-			if(orderNum.equals("2")) {ex.delete();
-			}
-			if(orderNum.equals("3")) {ex.update();
-			}
-			if(orderNum.equals("4")) {ex.select();
+		void initResponse() {
+			String res="";
+			while(!res.equals("q")) {
+			System.out.println("원하는 서비스 번호를 입력 :");
+			System.out.println("1. 유저 생성");
+			System.out.println("2. 유저 삭제");
+			System.out.println("3. 유저 수정");
+			System.out.println("4. 유저 조회");
+			System.out.println("q.종료");
+			res=scan.nextLine();
+			if(res.equals("q")) {
+				System.out.println("종료");
+			}else {
+				if(res.equals("1")) {insert();
+				}
+				if(res.equals("2")) {delete();
+				}
+				if(res.equals("3")) {update();
+				}
+				if(res.equals("4")) {select();
+				}
 			}
 		}
 	}
+		
+	public static void main(String[] args) {
+		Execute ex=new Execute();
+		ex.initResponse();
+		}
 }
